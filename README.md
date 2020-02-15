@@ -19,16 +19,15 @@ path=    /extra/space/
 params=   more spaces !
 ```
 
-Demo returns:
+Output of test.sh:
 ```
-== demo ==
-file: ./demo.ini
---- list of sections (begin) ---
+$ ./test.sh
+== get_sections_array ==
 section1
 section2
 section3
---- list of sections (end) ---
-value of key 'path' in section 'section1': /home/jarda/
+== get_value_from_section_key ==
+value of key 'path' in section 'section1':   /home/jarda/
 value of key 'params' in section 'section2': dummy test
-value of key 'path' in section 'section3': /extra/space/
+value of key 'path' in section 'section3':   /extra/space/
 ```
